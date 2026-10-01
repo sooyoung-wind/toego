@@ -96,6 +96,11 @@ def main(src: str, out: str) -> None:
         (out_dir / f"{name}.json").write_text(json.dumps(obj, ensure_ascii=False, indent=1),
                                                encoding="utf-8")
     n_sent = sum(len(p["sentences"]) for p in paras)
+    # 입력 전제: 저자 정보를 뺀 심사용 원고. 이메일이 보이면 사용자에게 알린다.
+    emails = set(re.findall(r"[\w.+-]+@[\w-]+\.[\w.-]+", txt + json.dumps(tables, ensure_ascii=False)))
+    if emails:
+        print(f"WARNING: 원고에 이메일 주소 {len(emails)}개가 있습니다. 저자 정보를 지운 심사용 원고를 넣어 주세요.",
+              file=sys.stderr)
     print(f"paragraphs={len(paras)} sentences={n_sent} tables={len(tables)} captions={len(captions)}")
 
 

@@ -36,6 +36,7 @@ reason for every edit and a copy button for pasting the revised text back into t
 
 - **Claude Code에서 쓰는 것을 권장합니다.** 스크립트를 로컬에서 실행해야 하고, agent는 claude.ai 채팅에서 로드되지 않습니다.
 - [`uv`](https://docs.astral.sh/uv/)와 Python 3.11(`uv`가 자동으로 받음).
+- **입력은 저자 정보(이름·소속·이메일)를 뺀 심사용 원고입니다.** 저자 정보가 있으면 지우고 넣으세요. 원고에서 이메일 주소가 발견되면 추출기가 경고하고 작업을 멈춥니다.
 - `.hwp`(HWP 5.x)만 지원합니다. `.hwpx`는 한/글에서 `.hwp`로 저장해서 쓰세요. 수식 개체는 텍스트로 추출되지 않습니다.
 
 ## 실행하는 것과 네트워크 사용 (공개)
@@ -51,7 +52,7 @@ reason for every edit and a copy button for pasting the revised text back into t
 
 ## Privacy
 
-See the [Privacy Policy](PRIVACY.md). The plugin runs locally, has no server, and sends no manuscript content or personal data anywhere.
+See the [Privacy Policy](PRIVACY.md). The plugin is meant for anonymized review manuscripts without author names, affiliations, or emails. It runs locally, has no server, and sends no manuscript content anywhere.
 
 ## License
 
