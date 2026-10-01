@@ -49,6 +49,10 @@ reason for every edit and a copy button for pasting the revised text back into t
 
 원고는 미발표 자료일 수 있습니다. 결과 HTML을 외부에 게시할지는 사용자가 판단하세요.
 
+## Privacy
+
+See the [Privacy Policy](PRIVACY.md). The plugin runs locally, has no server, and sends no manuscript content or personal data anywhere.
+
 ## License
 
 MIT

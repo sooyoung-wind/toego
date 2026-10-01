@@ -16,5 +16,6 @@
     "hwp"
   ],
   "homepage": "https://github.com/sooyoung-wind/toego",
-  "repository": "https://github.com/sooyoung-wind/toego"
+  "repository": "https://github.com/sooyoung-wind/toego",
+  "privacyPolicyUrl": "https://github.com/sooyoung-wind/toego/blob/main/PRIVACY.md"
 }
