@@ -3,7 +3,18 @@
   "displayName": "Toego",
   "version": "0.1.0",
   "description": "Revise Korean academic manuscripts (.hwp) against reviewer comments at sentence, paragraph, section and paper level, fact-check every claim against the paper's own tables and figures, and produce a before/after comparison HTML with a reason for every edit.",
-  "author": { "name": "sooyoung.wind" },
+  "author": {
+    "name": "sooyoung.wind"
+  },
   "license": "MIT",
-  "keywords": ["korean", "academic-writing", "manuscript", "peer-review", "revision", "hwp"]
+  "keywords": [
+    "korean",
+    "academic-writing",
+    "manuscript",
+    "peer-review",
+    "revision",
+    "hwp"
+  ],
+  "homepage": "https://github.com/sooyoung-wind/toego",
+  "repository": "https://github.com/sooyoung-wind/toego"
 }
