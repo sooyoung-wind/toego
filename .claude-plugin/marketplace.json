@@ -1,0 +1,14 @@
+{
+  "name": "toego",
+  "description": "Toego: Korean academic manuscript revision against reviewer comments",
+  "owner": {
+    "name": "sooyoung.wind"
+  },
+  "plugins": [
+    {
+      "name": "toego",
+      "source": "./",
+      "description": "한국어 학술 원고(.hwp) 퇴고와 수정 전/후 비교 HTML"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+ "meta": {"title": "예시 원고 퇴고 비교", "source": "example.hwp", "date": "2026-10-01",
+  "reviewer_comment": "결과의 범위를 넘는 해석을 수정해 주시기 바랍니다.", "evidence_sources": ["Table 3 (예시)"]},
+ "rules": {"tense": [["결과 — 관찰된 수치", "과거형", "… 2.1 %로 줄었다"]],
+  "structure": [["결과 각 절", "두괄식", "핵심 결과 → 수치 → 해석"]],
+  "flags": [["과잉일반화", "한정된 자료의 결과를 일반화"]]},
+ "structure": {"before": ["3. 결과"], "after": ["3. 결과 및 고찰"], "reasons": [["장 제목", "고찰 내용이 포함됨"]]},
+ "sections": [{"id": "3.1", "title": "3.1 예시 절", "pattern": "결과 — 두괄식",
+  "flow_before": "평가형 주장 → 수치 → 일반화", "flow_after": "수치 → 범위 한정 해석",
+  "verdict": "수치는 맞으나 해석이 결과 범위를 넘는다.",
+  "paras": [
+   {"id": "3.1-P1", "status": "수정", "pattern": "두괄식",
+    "summary": "두 시험 자료에서 제안 모델의 평균 오차가 기존 방법보다 작았다.",
+    "after": "두 시험 자료에서 제안 모델의 평균 오차는 기존 방법보다 작았다(Table 3).",
+    "edits": [{"t": "AI상투", "b": "다각도로 검증한 결과", "a": "(삭제)", "why": "무엇을 검증했는지 말하지 않는 수식어다."},
+              {"t": "과잉일반화", "b": "모든 데이터셋에서 기존 방법을 능가하여 매우 우수한 성능을 확보하였다", "a": "두 시험 자료에서 … 작았다(Table 3)", "why": "평가 자료는 두 개다. ‘능가’, ‘매우 우수’는 수치가 뒷받침하지 않는 평가어다."}]},
+   {"id": "3.1-P2", "status": "수정", "pattern": "미괄식(절 마무리)",
+    "summary": "평균 오차는 4.8 %에서 2.1 %로 줄었으며, 다른 조건에서의 성능은 검증하지 않았다.",
+    "after": "평균 오차는 4.8 %에서 2.1 %로 줄었다. 다만 이 결과는 대상 자료에 한정되며, 다른 조건에서의 성능은 추가 검증이 필요하다.",
+    "edits": [{"t": "시제", "b": "감소한다", "a": "줄었다", "why": "관찰된 결과는 과거형으로 쓴다."},
+              {"t": "과잉일반화", "b": "어떤 조건에서도 일반화될 수 있음을 의미한다", "a": "대상 자료에 한정되며 … 추가 검증이 필요하다", "why": "한 자료의 결과로 일반화 가능성을 주장할 수 없다."}],
+    "check": ["다른 자료에서의 검증 결과가 있으면 함께 제시."]}
+  ]}],
+ "abstract": {"before": "The proposed method demonstrates superior performance.", "after": "The proposed method reduced the mean error from 4.8 % to 2.1 % on two test sets.",
+  "edits": [{"t": "과잉일반화", "b": "demonstrates superior performance", "a": "reduced the mean error from 4.8 % to 2.1 % on two test sets", "why": "평가어 대신 수치와 범위를 쓴다."}], "note": "예시"},
+ "captions": [], "references": [],
+ "global_flow": {"question_to_conclusion": [["오차를 줄일 수 있는가", "3.1 Table 3", "결론에 수치로 반영"]], "verdict": "예시", "paragraph_chain": "예시"},
+ "author_checks": ["예시 확인 항목"], "fact_checks": [["4.8 % → 2.1 %", "일치", "Table 3"]]
+}
